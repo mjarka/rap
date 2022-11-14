@@ -11,13 +11,13 @@ function App() {
     const interval = setInterval(() => {
       console.log("This will run every second!");
       setCount(2);
-    }, 5000);
+    }, 15000);
     return () => clearInterval(interval);
   }, []);
   return (
     <div className="App">
       <header className="App-header">
-        <Beeper counter={count} />
+        <Beeper />
         <img src={logo} className="App-logo" alt="logo" />
       </header>
     </div>
